@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      const total = servicePrice * hours;
+      const total = servicePrice * days;
 
       result.innerText =
         "Total Estimasi: Rp " + total.toLocaleString("id-ID");
