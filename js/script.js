@@ -132,17 +132,17 @@ document.addEventListener("DOMContentLoaded", function () {
   ========================= */
 
   const serviceSelect = document.getElementById("serviceSelect");
-  const workHours = document.getElementById("workHours");
+  const workDays = document.getElementById("workDays");
   const result = document.getElementById("result");
 
-  if (serviceSelect && workHours && result) {
+  if (serviceSelect && workDays && result) {
 
     window.calculatePrice = function () {
       const servicePrice = parseInt(serviceSelect.value);
-      const hours = parseInt(workHours.value);
+      const days = parseInt(workDays.value);
 
-      if (!hours || hours <= 0) {
-        result.innerText = "Masukkan jumlah jam yang valid!";
+      if (!days || days <= 0) {
+        result.innerText = "Masukkan jumlah hari yang valid!";
         return;
       }
 
