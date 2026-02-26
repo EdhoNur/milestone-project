@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AssitBro</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -9,10 +10,11 @@
 <body class="bg-gray-900 text-white">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-10 py-5 bg-gray-800">
+  <nav class="bg-gray-800 px-10 py-5 flex justify-between items-center">
     <h1 class="text-2xl font-bold text-blue-500">AssitBro</h1>
+
     <div class="space-x-6">
-      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="index.html" class="text-blue-400 font-semibold">Home</a>
       <a href="about.html" class="hover:text-blue-400">Tentang</a>
       <a href="services.html" class="hover:text-blue-400">Layanan</a>
       <a href="portfolio.html" class="hover:text-blue-400">Portfolio</a>
@@ -21,13 +23,14 @@
     </div>
   </nav>
 
-  <!-- Intro -->
-  <section class="text-center py-24">
+  <!-- Hero -->
+  <section class="text-center py-24 px-6">
     <h2 class="text-4xl font-bold mb-6">
       Siap bantu kamu bro!
     </h2>
+
     <p class="text-gray-400 max-w-2xl mx-auto">
-      Butuh jaga rumah? Bersih-bersih? Cuci baju? Benerin mobil?
+      Butuh jaga rumah? Bersih-bersih? Cuci baju? Benerin kendaraan?
       Serahin aja ke AssitBro.
     </p>
 
@@ -36,49 +39,10 @@
        Pesan Sekarang
     </a>
   </section>
-
-  <!-- Layanan Preview -->
-  <section class="py-16 bg-gray-800">
-    <h2 class="text-3xl text-center font-semibold mb-12">
-      Layanan Kami
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8 px-10">
-
-      <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3 text-blue-400">
-          Bersih-Bersih Rumah
-        </h3>
-        <p class="text-gray-400">
-          Rumah kinclong tanpa ribet.
-        </p>
-      </div>
-
-      <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3 text-blue-400">
-          Jaga Rumah
-        </h3>
-        <p class="text-gray-400">
-          Aman saat kamu lagi pergi.
-        </p>
-      </div>
-
-      <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3 text-blue-400">
-          Jasa Random
-        </h3>
-        <p class="text-gray-400">
-          Ada tugas aneh? Bro siap bantu.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 text-gray-400">
-    © 2026 AssitBro. Siap bantu kamu bro!
+  <footer class="bg-gray-800 text-center py-6 text-gray-400">
+    © 2026 AssitBro — Siap bantu kamu bro!
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
