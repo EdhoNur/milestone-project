@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - AssitBro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <nav class="bg-gray-800 px-10 py-5 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-500">AssitBro</h1>
+
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="about.html" class="hover:text-blue-400">Tentang</a>
+      <a href="services.html" class="text-blue-400 font-semibold">Layanan</a>
+      <a href="portfolio.html" class="hover:text-blue-400">Portfolio</a>
+      <a href="contact.html" class="hover:text-blue-400">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Section Layanan -->
+  <section class="py-20 px-10 text-center">
+    <h2 class="text-3xl font-bold mb-10">Layanan Kami</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-400">Bersih Rumah</h3>
+        <p class="text-gray-400">Rumah bersih tanpa ribet.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-400">Jaga Rumah</h3>
+        <p class="text-gray-400">Aman saat kamu pergi.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-400">Jasa Random</h3>
+        <p class="text-gray-400">Butuh bantuan? Bro siap bantu.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 💰 Kalkulator Estimasi Harga -->
+  <section class="px-10 py-16 bg-gray-900">
+    <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-lg">
+      
+      <h2 class="text-2xl font-bold text-blue-500 mb-6 text-center">
+        💰 Kalkulator Estimasi Harga
+      </h2>
+
+      <!-- Pilih Layanan -->
+      <div class="mb-4 text-left">
+        <label class="block mb-2 text-gray-300">Pilih Layanan</label>
+        <select id="serviceSelect" class="w-full p-3 rounded bg-gray-700 text-white">
+          <option value="300000">Full House Cleaning 300 ribu/hari</option>
+          <option value="250000">Bantu Pindahan 250 ribu/hari</option>
+          <option value="100000">Jaga Rumah 100 ribu/hari</option>
+        </select>
+      </div>
+
+      <!-- Input Jam -->
+      <div class="mb-4 text-left">
+        <label class="block mb-2 text-gray-300">Jumlah hari Kerja</label>
+        <input 
+          type="number" 
+          id="workDays" 
+          placeholder="Masukkan jumlah jam"
+          class="w-full p-3 rounded bg-gray-700 text-white"
+        >
+      </div>
+
+      <!-- Tombol -->
+      <button 
+        onclick="calculatePrice()" 
+        class="w-full bg-blue-500 hover:bg-blue-600 py-3 rounded font-semibold transition"
+      >
+        Hitung Total
+      </button>
+
+      <!-- Hasil -->
+      <div id="result" class="mt-6 text-center text-xl font-bold text-green-400"></div>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-center py-6 text-gray-400">
+    © 2026 AssitBro — Siap bantu kamu bro!
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
